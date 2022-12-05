@@ -11,5 +11,6 @@ services:
         - DISK_CACHE=1
         - CACHE_ROOT_DIR=/prerender/cache
         - CACHE_LIVE_TIME=15.552.000
-        volumes: /solr/prerender/cache:/prerender/cache
+        volumes: 
+            - /solr/prerender/cache:/prerender/cache
         restart: unless-stopped
