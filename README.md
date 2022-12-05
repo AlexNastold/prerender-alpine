@@ -2,9 +2,9 @@
 
 Lightweight Prerender container built on Alpine Linux with Node and Headless Chromium.
 
-- Prerender 5.20.0
-- Chromium 99.0.4844.84
-- Node 16.15.0
+- Prerender 5
+- Chromium
+- Node 16
 
 ## Requirements
 
@@ -15,8 +15,8 @@ Lightweight Prerender container built on Alpine Linux with Node and Headless Chr
 Pull and run the image:
 
 ```
-docker pull tvanro/prerender-alpine:6.5.0
-docker run -p 3000:3000 tvanro/prerender-alpine:6.5.0
+git pull https://github.com/AlexNastold/prerender-alpine.git
+docker compose up -d 
 ```
 Prerender will now be running on http://localhost:3000. Try the container out with curl:
 
