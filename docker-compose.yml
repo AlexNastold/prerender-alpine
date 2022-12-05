@@ -2,6 +2,7 @@ version: '3'
 services:
     prerender:
         build: .
+        image: prerender-alpine
         container_name: prerender-alpine
         ports:
         - 3000:3000
