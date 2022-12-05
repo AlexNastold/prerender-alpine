@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "prerender": "5.20.0",
-    "prerender-memory-cache": "1.0.2"
+    "prerender-memory-cache": "1.0.2",
+    "prerender-disk-cache": "2.0.0"
   }
 }
