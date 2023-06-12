@@ -1,9 +1,7 @@
-FROM node:16-alpine
+FROM node:18-alpine
 
 ENV CHROME_BIN=/usr/bin/chromium-browser
 ENV CHROME_PATH=/usr/lib/chromium/
-ENV MEMORY_CACHE=0
-ENV DISK_CACKE=0
 
 RUN apk update
 

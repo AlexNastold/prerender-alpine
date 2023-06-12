@@ -1,18 +1,19 @@
 version: '3'
-services:
+services:       
     prerender:
         build: .
         image: prerender-alpine
         container_name: prerender-alpine
         ports:
-        - 3000:3000
-        environment:
-        - MEMORY_CACHE=${MEMORY_CACHE}
-        - CACHE_MAXSIZE=${CACHE_MAXSIZE}
-        - CACHE_TTL=${CACHE_TTL}
-        - DISK_CACHE=${DISK_CACHE}
-        - CACHE_ROOT_DIR=${CACHE_ROOT_DIR}
-        - CACHE_LIVE_TIME=${CACHE_LIVE_TIME}
-        volumes: 
-            - /solr/prerender/cache:/prerender/cache
+        - 8992:3000
         restart: unless-stopped
+#    nginx:
+#        image: nginx
+#        container_name: nginx
+#        ports:
+#            - 80:80
+#        restart: unless-stopped
+#        volumes:
+#           - /mnt/storage/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+#           - /mnt/storage/nginx/cache/:/var/cache/nginx/
+#           - /mnt/storage/nginx/ssl/:/etc/nginx/ssl/         
